@@ -15,8 +15,9 @@ public class LogSave implements Log {
 
         else if (operation.equals("*"))
             op = " * ";
-        else
+        else if (operation.equals("/"))
             op = " / ";
+       
         return String.format("%s%s%s = %s", x, op, y, result);
     }
 
